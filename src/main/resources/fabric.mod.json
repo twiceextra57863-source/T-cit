@@ -1,23 +1,36 @@
 {
-  "schemaVersion": 1,
-  "id": "citrevamped",
-  "version": "${version}",
-  "name": "CIT Revamped",
-  "description": "Custom Item Textures Revamped for Fabric.",
-  "authors": ["twicefear"],
-  "contact": {},
-  "license": "MIT",
-  "environment": "*",
-  "entrypoints": {
-    "main": ["com.twicefear.minetwice.CITRevamped"],
-    "client": ["com.twicefear.minetwice.CITRevampedClient"],
-    "modmenu": ["com.twicefear.minetwice.config.ModMenuIntegration"]
-  },
-  "mixins": ["citrevamped.mixins.json"],
-  "depends": {
-    "fabricloader": ">=0.14.22",
-    "minecraft": "~1.20.1",
-    "java": ">=17",
-    "fabric-api": "*"
-  }
+    "schemaVersion": 1,
+    "id": "cit-revamped",
+    "version": "${version}",
+    "name": "CIT Revamped",
+    "description": "A modern, powerful and user-friendly Custom Item Texture replacement mod for Fabric. Supports model/texture swaps via NBT and simple .cit files.",
+    "authors": ["Twicefear"],
+    "contact": {
+        "homepage": "https://github.com/Twicefear/cit-revamped",
+        "sources": "https://github.com/Twicefear/cit-revamped",
+        "issues": "https://github.com/Twicefear/cit-revamped/issues"
+    },
+    "license": "MIT",
+    "icon": "assets/minetwice/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.twicefear.minetwice.CITRevampedClient"
+        ],
+        "modmenu": [
+            "com.twicefear.minetwice.config.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        "citrevamped.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.15.11",
+        "minecraft": "~1.21.4",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+    "recommends": {
+        "modmenu": "*"
+    }
 }
