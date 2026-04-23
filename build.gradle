@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.7-SNAPSHOT'
+    id 'fabric-loom' version '1.6.11'   // Latest stable release for 1.21.4 (as of writing)
     id 'maven-publish'
 }
 
@@ -21,10 +21,10 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    // Fabric API – required for resource reload listener
+    // Fabric API – release version
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    // Mod Menu (optional but recommended)
+    // Mod Menu – release version
     modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
 }
 
