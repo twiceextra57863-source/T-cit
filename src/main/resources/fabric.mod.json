@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "citrevamped",
+  "version": "${version}",
+  "name": "CIT Revamped",
+  "description": "Custom Item Textures Revamped for Fabric.",
+  "authors": ["twicefear"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.twicefear.minetwice.CITRevamped"],
+    "client": ["com.twicefear.minetwice.CITRevampedClient"],
+    "modmenu": ["com.twicefear.minetwice.config.ModMenuIntegration"]
+  },
+  "mixins": ["citrevamped.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
