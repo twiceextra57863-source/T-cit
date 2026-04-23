@@ -7,10 +7,11 @@ import net.minecraft.util.Identifier;
 public class CITReloadListener implements SimpleSynchronousResourceReloadListener {
     @Override
     public Identifier getFabricId() {
-        return new Identifier("citrevamped", "cit_reload");
+        return new Identifier("cit-revamped", "cit_reloader");
     }
 
     @Override
     public void reload(ResourceManager manager) {
+        CITManager.reload(manager);
     }
 }
